@@ -1,0 +1,9 @@
+version: 2
+updates:
+  # Maven dependencies
+  - package-ecosystem: "maven"
+    directory: "/" # The directory where your pom.xml file is located
+    schedule:
+      interval: "weekly" # Check for updates weekly. You can use daily, weekly, or monthly.
+    open-pull-requests-limit: 5 # Limits the number of open PRs Dependabot can create
+    rebase-strategy: "auto" # Automatically rebase PRs if there are conflicts
